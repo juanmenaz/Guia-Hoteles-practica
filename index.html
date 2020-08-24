@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Guia Hoteles</title>
   </head>
@@ -23,81 +23,131 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="card-hotel">
           <h3>¿Como funciona?</h3>
           <p>busca los Hoteles deacuerdo a tu preferencia.</p>
         </div>
-        <div class="col-sm-4">
-          <h3>¿Donde puedo reservar?</h3>
-          <p>
+        <div class="card-hotel">
+            <h3>¿Donde puedo reservar?</h3>
+            <p>
             Elige la ciudad que te interece y luego realiza la resva con tus
             datos.
-          </p>
+            </p>            
         </div>
-        <div class="col-sm-4">
+        <div class="card-hotel">
           <h3>¿Como pago?</h3>
           <p>utiliza tu tarjeta favorita.</p>
         </div>
         <div class="d-flex flex-wrap flex-row-reverse">
-          <div class="col-sm-3">
-            <h3>Hotel Rio de Janeiro</h3>
-            <p>
-              Hotel ubicado en pleno centro de Rio de Janeiro a pocos metross de
-              la playa.
-            </p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel Rio de Janeiro</h3>
+                <p>
+                Hotel ubicado en pleno centro de Rio de Janeiro a pocos metross de
+                la playa.
+                </p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div> 
+                <h3>Hotel Lima</h3>
+                <p>Hotel ubicado en pleno centro.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
-          <div class="col-sm-3">
-            <h3>Hotel Lima</h3>
-            <p>Hotel ubicado en pleno centro.</p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel Buenos aires</h3>
+                <p>Hotel ubicado en pleno centro</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
-          <div class="col-sm-3">
-            <h3>Hotel Buenos aires</h3>
-            <p>Hotel ubicado en pleno centro</p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel Barcelona</h3>
+                <p>
+                Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+                playa.
+                </p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
-          <div class="col-sm-3">
-            <h3>Hotel Barcelona</h3>
-            <p>
-              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
-              playa.
-            </p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel an Pablo</h3>
+                <p>Hotel ubicado en pleno centro.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
-          <div class="col-sm-3">
-            <h3>Hotel an Pablo</h3>
-            <p>Hotel ubicado en pleno centro.</p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel Madrid</h3>
+                <p>Hotel ubicado en pleno centro.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
-          <div class="col-sm-3">
-            <h3>Hotel Madrid</h3>
-            <p>Hotel ubicado en pleno centro.</p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
-          </div>
-          <div class="col-sm-4">
-            <h3>Hotel La Paz</h3>
-            <p>Hotel ubicado en pleno centro.</p>
-            <button type="button" class="btn btn-outline-secondary">
-              Reservar
-            </button>
+          <div class="card-hotel d-flex flex-column justify-content-between">
+              <div>
+                <h3>Hotel La Paz</h3>
+                <p>Hotel ubicado en pleno centro.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">
+                Reservar
+                </button>
+              </div>
           </div>
         </div>
       </div>
     </div>
-
+    <footer>
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">facebook</a>
+          <a href="http://www.twitter.com">twitter</a>
+          <a href="http://www.instagram.com">instagram</a>
+          <a href="http://www.google.com">google+</a>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <h3>Oficina Central</h3>
+            <p>Tucaman 834,CABA,Argentina</p>
+            <p>+549111234567></p>
+            <p>contacto@guiahoteles.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <a href="http://www.facebook.com">nosotros</a>
+          <a href="http://www.twitter.com">Precio</a>
+          <a href="http://www.instagram.com">Terminos y condiciones</a>
+          <a href="http://www.google.com">Contacto</a>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

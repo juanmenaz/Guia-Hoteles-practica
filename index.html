@@ -106,7 +106,7 @@
           <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
             <img src="images/recamara-hotel.jpg" class="card-img-top" alt="Responsive image">
             <div class="card-body">
-              <h5 class="card-title">Hotel Buenos aires</h5>
+              <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="las primeras reservas cuentan con un tour por la ciudad gratis!">Hotel Buenos aires</h5>
               <h6 class="card-subtitle text-muted">Argentina</h6>
               <p class="card-text">Hotel ubicado en pleno centro</p>
             </div>
@@ -133,7 +133,7 @@
               <p class="card-text">Hotel ubicado en pleno centro.</p>
             </div>
             <div>
-              <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="consulta las promociones vijentes">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -218,5 +218,13 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/Popper.js/dist/Popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function(){
+          $("[data-toggle='tooltip']").tooltip();
+          $("[data-toggle='popover']").popover();
+      });
+    </script>
+
   </body>
 </html>

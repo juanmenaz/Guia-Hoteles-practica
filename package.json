@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
-    ,"scss": "node-sass -o css/ css/"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/juanmenaz/guia-hoteles#readme",
   "devDependencies": {
+    "less": "^3.12.2",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1"
   },

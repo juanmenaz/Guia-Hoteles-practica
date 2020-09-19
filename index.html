@@ -101,10 +101,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
           </a>
-        </div>
-
-        
-
+        </div>       
         <div class="d-flex flex-wrap flex-row-reverse">
           <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
             <img src="images/hotel-1.jpg" class="card-img-top" alt="Responsive image">
@@ -178,7 +175,7 @@
               <h5 class="card-title">Hotel La Paz</h5>
               <h6 class="card-subtitle text-muted">Bolivia</h6>
               <p class="card-text">Hotel ubicado en pleno centro.</p>
-              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
             </div>
             <div>
               <button type="button" class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
@@ -191,7 +188,7 @@
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModallabel">Contacto con el Hotel</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                  <span aria-hidden="true">&times;;</span>
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
@@ -251,6 +248,25 @@
           $('.carousel').carousel({
               interval: 2000
           });
+          $('#contacto').on('show.bs.modal', function (e){
+              console.log('el modal contacto se esta mostrando');
+              
+              $('#contactoBtn').removeClass('btn-outline-success');
+              $('#contactoBtn').addClass('btn-primary');
+              $('#contactoBtn').prop('disabled', true);
+          });
+          $('#contacto').on('shown.bs.modal', function (e){
+              console.log('el modal contacto se  mostro');
+          });
+          
+          $('#contacto').on('hide.bs.modal', function (e){
+              console.log('el modal contacto se esta ocultando');
+          });
+          $('#contacto').on('hidden.bs.modal', function (e){
+              console.log('el modal contacto se oculto');
+              $('#contactoBtn').prop('disabled', false);
+          });
+        
       });
     </script>
 
